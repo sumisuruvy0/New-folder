@@ -1,6 +1,6 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
+<html lang="en"><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
@@ -178,11 +178,14 @@
             <div>
                     <h1>Let's make beutiful flowers a part of your life.</h1>
                 <p>
-                It is a long established fact that a reader will be distracted by the readable content of a page when looking at it's layout. The point of using Lorem lpsum is that it has a more-or-less normal distribution of letters.
+                It is a long established fact that a reader will be 
+distracted by the readable content of a page when looking at it's 
+layout. The point of using Lorem lpsum is that it has a more-or-less 
+normal distribution of letters.
                 </p>
                 <button>Shop Now</button></div>
             <div>
-                <img src="pngwing 10(1).png" alt=""></div>
+                <img src="Document_files/pngwing%2010(1).png" alt=""></div>
         </div>
             <div class="read">
                 <h1>Our Fetured Flowers</h1>
@@ -191,15 +194,15 @@
                 </p></div>
                <div class="card">
                 <div class="card1">
-                    <img src="pngwing 6.png" alt="">
+                    <img src="Document_files/pngwing%206.png" alt="">
                     <a href="">Pink Flower Tree</a>
                 </div>
                 <div class="card2">
-                    <img src="pngwing 5.png" alt="">
+                    <img src="Document_files/pngwing%205.png" alt="">
                     <a href="">Pink Flower Tree</a>
                 </div>
                 <div class="card3">
-                    <img src="pngwing 7(1).png" alt="">
+                    <img src="Document_files/pngwing%207(1).png" alt="">
                     <a href="">Pink Flower Tree</a>
                 </div>
                </div>
@@ -210,7 +213,7 @@
                             content of a page when looking at its layout.</p>
                             <button>Sign Up</button></div>
                             <div>
-                                <img src="pngwing 8.png" alt=""></div>
+                                <img src="Document_files/pngwing%208.png" alt=""></div>
                </div>
                <div class="instagram">
                 <h1>Insatragram</h1>
@@ -218,10 +221,10 @@
                     content of a page when looking at its layout.</p>
                </div>
                <div class="flower-card">
-                <div class="img1"><img src="pngwing 6.png" alt=""></div>
-                <div class="img2"><img src="pngwing 8.png" alt=""></div>
-                <div class="img3"><img src="pngwing 5.png" alt=""></div>
-                <div class="img4"><img src="pngwing 5.png" alt=""></div>
+                <div class="img1"><img src="Document_files/pngwing%206.png" alt=""></div>
+                <div class="img2"><img src="Document_files/pngwing%208.png" alt=""></div>
+                <div class="img3"><img src="Document_files/pngwing%205.png" alt=""></div>
+                <div class="img4"><img src="Document_files/pngwing%205.png" alt=""></div>
                </div>
                 <div class="background-img">
                     <h1>Get The Latest Deals</h1>
@@ -239,5 +242,43 @@
                </div>
     </section>
 
-</body>
-</html>
+<!-- Code injected by live-server -->
+<script>
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script>
+
+</body></html>
